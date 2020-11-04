@@ -83,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603861260285</updated>
       <workItem from="1603861262144" duration="4891000" />
-      <workItem from="1604480647839" duration="893000" />
+      <workItem from="1604480647839" duration="2517000" />
     </task>
     <task id="LOCAL-00001" summary="Depth First Search (Question 1 Solution)">
       <created>1604481225288</created>
@@ -99,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604481345133</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Uniform Cost Search (Question 3 Solution)">
+      <created>1604481574517</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604481574517</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +116,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Depth First Search (Question 1 Solution)" />
     <MESSAGE value="Breadth First Search (Question 2 Solution)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Breadth First Search (Question 2 Solution)" />
+    <MESSAGE value="Uniform Cost Search (Question 3 Solution)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uniform Cost Search (Question 3 Solution)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="141" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604480952405">
@@ -117,10 +125,10 @@
     </state>
     <state x="141" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1604480952405" />
     <state x="0" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.686.1920.1080/3000.686.1920.1080/0.713.1080.1007@0.713.1080.1007" timestamp="1603861347078" />
-    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2" timestamp="1604481344989">
+    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2" timestamp="1604481574378">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1604481344989" />
+    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1604481574378" />
     <state width="1034" height="242" key="GridCell.Tab.0.bottom" timestamp="1603862556353">
       <screen x="0" y="713" width="1080" height="1007" />
     </state>

@@ -187,10 +187,11 @@ def uniformCostSearch(problem):
                 # also add the successor points to the dictionary
                 dictionary[str(x)] = problem.getCostOfActions(goal + [y])
 
-                # so now get successors of the current successor point, and add it to the queue together with the dictionary
+                # so now add the point to the queue together with the dictionary
                 myUCS.push((x, goal + [y], z), dictionary[str(x)])
 
         if goalState:
+            # if the successor point is the goal, return
             return goal
 
     util.raiseNotDefined()
@@ -205,6 +206,47 @@ def nullHeuristic(state, problem=None):
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
+
+    #A priorityQueue goes with Astar search algorithm, so here we are
+    mySearchQueue = util.PriorityQueue()
+    dictionary = util.Counter() # introduce a modified dictionary (counter) to keep track of counts for a set of keys.
+    pathWalked = [] # the path the pacman has already moved through
+
+    startingPoint = problem.getStartState() #get the starting point
+
+    #add the startingPoint to the dictionary as in the ucs, but add a heuristic value to it
+    dictionary[str(startingPoint[0])] += heuristic(startingPoint, problem)
+
+    # push into the queue together with the dictionary of keys
+    mySearchQueue.push((startingPoint, [], 0), dictionary[str(startingPoint[0])])
+
+    #iterate the queue
+    while not mySearchQueue.isEmpty():
+        # get the current successor point while popping it from the stack
+        successor, action, cost = mySearchQueue.pop()
+        goalState = problem.isGoalState(successor) #get the goalstate
+
+        if successor not in pathWalked:
+            # if the successor point has not been looked at then add it to the path already walked upon
+            pathWalked.append(successor)
+
+            # get the point's successors
+            otherSuccessors = problem.getSuccessors(successor)
+            for x, y, z in otherSuccessors:
+                #get the cost of actions and the heuristicValue
+                actionsCost = problem.getCostOfActions(action + [y])
+                heuristicValue = heuristic(x, problem)
+
+                #add it to the dictionary for the point's successors
+                dictionary[str(x)] = actionsCost + heuristicValue
+
+                #so now add the point to the queue together with the dictionary
+                mySearchQueue.push((x, action + [y], z), dictionary[str(x)])
+
+        if goalState:
+            # if the successor point is the goal, return
+            return action
+
     util.raiseNotDefined()
 
 
