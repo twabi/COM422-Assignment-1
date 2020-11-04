@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01db9cdc-7196-4745-b631-bb58e885f63f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/COM422-Assignment-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
-    </list>
+    <list default="true" id="01db9cdc-7196-4745-b631-bb58e885f63f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,12 +80,25 @@
       <option name="presentableId" value="Default" />
       <updated>1603861260285</updated>
       <workItem from="1603861262144" duration="4891000" />
-      <workItem from="1604480647839" duration="306000" />
+      <workItem from="1604480647839" duration="579000" />
     </task>
+    <task id="LOCAL-00001" summary="Depth First Search (Question 1 Solution)">
+      <created>1604481225288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604481225288</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Depth First Search (Question 1 Solution)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Depth First Search (Question 1 Solution)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="141" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604480952405">
@@ -102,6 +106,10 @@
     </state>
     <state x="141" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1604480952405" />
     <state x="0" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.686.1920.1080/3000.686.1920.1080/0.713.1080.1007@0.713.1080.1007" timestamp="1603861347078" />
+    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2" timestamp="1604481225153">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1604481225153" />
     <state width="1034" height="242" key="GridCell.Tab.0.bottom" timestamp="1603862556353">
       <screen x="0" y="713" width="1080" height="1007" />
     </state>

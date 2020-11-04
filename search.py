@@ -128,6 +128,35 @@ def depthFirstSearch(problem):
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     "*** YOUR CODE HERE ***"
+    # same approach as the depth first search, with changes in mainly the data structure
+
+    # same approach as the Depth first search, but we use a queue because breadth first always uses a queue
+    # As per the algorithms and data structures
+    mySearchQueue = util.Queue()
+    pathWalked = []  # array to get the area the pacman has already moved in
+    # getting the starting point
+    startingPoint = problem.getStartState()
+    mySearchQueue.push((startingPoint, [], 0))
+
+    # a loop to traverse the stack as long as its not empty
+    while not mySearchQueue.isEmpty():
+
+        # get the current successor point while popping it from the stack
+        successor, goal, cost = mySearchQueue.pop()
+        goalState = problem.isGoalState(successor)
+
+        if successor not in pathWalked:
+            # if the successor point has not been looked at then add it to the path already walked upon
+            pathWalked.append(successor)
+            otherSuccessorPoints = problem.getSuccessors(successor)
+            for x, y, z in otherSuccessorPoints:
+                # so now get successors of the current successor point, and add it to the queue
+                mySearchQueue.push((x, goal + [y], z))
+
+        if goalState:
+            # if the successor point is the goal, return
+            return goal
+
     util.raiseNotDefined()
 
 def uniformCostSearch(problem):
