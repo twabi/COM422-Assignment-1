@@ -360,7 +360,34 @@ def cornersHeuristic(state, problem):
     walls = problem.walls # These are the walls of the maze, as a Grid (game.py)
 
     "*** YOUR CODE HERE ***"
-    return 0 # Default to trivial solution
+
+    #initialization of some variables
+    current = state[0]
+    pathWalked = state[1]
+    unWalkedPath = []
+    distance = []
+    heuristicValue = 0
+
+    if unWalkedPath:
+        #iterate the unWalkedPath List
+        for corner in unWalkedPath:
+
+            #get the temporary current distance value from the built-in maze-Distance function
+            dist_temp = mazeDistance(current, corner, problem.game_state)
+            distance.append(dist_temp) #add it to the distance list
+
+        #get the max value from the distance list and set it to be the heuristic value
+        #coz heuristic is the max distance from current position to all the unvisited corners.
+        heuristicValue = max(distance)
+        print(heuristicValue)
+
+    #if a corner is unvisited, add it to the unWalked path list making sure no corner is repeated that is
+    for corner in corners:
+        if corner not in pathWalked:
+            unWalkedPath.append(corner)
+
+    #return the heuristic value
+    return heuristicValue
 
 class AStarCornersAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"

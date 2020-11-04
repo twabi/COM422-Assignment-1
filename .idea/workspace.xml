@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="01db9cdc-7196-4745-b631-bb58e885f63f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.py" beforeDir="false" afterPath="$PROJECT_DIR$/search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchAgents.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603861260285</updated>
       <workItem from="1603861262144" duration="4891000" />
-      <workItem from="1604480647839" duration="2517000" />
+      <workItem from="1604480647839" duration="3261000" />
     </task>
     <task id="LOCAL-00001" summary="Depth First Search (Question 1 Solution)">
       <created>1604481225288</created>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604481574517</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="A star Search (Question 4 Solution)">
+      <created>1604483198322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604483198322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +124,8 @@
     <MESSAGE value="Depth First Search (Question 1 Solution)" />
     <MESSAGE value="Breadth First Search (Question 2 Solution)" />
     <MESSAGE value="Uniform Cost Search (Question 3 Solution)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uniform Cost Search (Question 3 Solution)" />
+    <MESSAGE value="A star Search (Question 4 Solution)" />
+    <option name="LAST_COMMIT_MESSAGE" value="A star Search (Question 4 Solution)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="141" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604480952405">
@@ -125,10 +133,10 @@
     </state>
     <state x="141" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1366.740@0.28.1366.740" timestamp="1604480952405" />
     <state x="0" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog/1080.686.1920.1080/3000.686.1920.1080/0.713.1080.1007@0.713.1080.1007" timestamp="1603861347078" />
-    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2" timestamp="1604481574378">
+    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2" timestamp="1604483198194">
       <screen x="0" y="28" width="1366" height="740" />
     </state>
-    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1604481574378" />
+    <state x="224" y="28" width="907" height="738" key="CommitChangelistDialog2/0.28.1366.740@0.28.1366.740" timestamp="1604483198194" />
     <state width="1034" height="242" key="GridCell.Tab.0.bottom" timestamp="1603862556353">
       <screen x="0" y="713" width="1080" height="1007" />
     </state>
