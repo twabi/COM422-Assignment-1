@@ -162,6 +162,37 @@ def breadthFirstSearch(problem):
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
+    #same approach as the last two solutions
+    # we use a priorityQueue for the uniform cost search, to minimize cost
+    # UCS always uses a priority queue from algorithms and data structures
+
+    myUCS = util.PriorityQueue()  # initialize the priority queue
+    dictionary = util.Counter()  # introduce a modified dictionary (counter) to keep track of counts for a set of keys.
+
+    pathWalked = []  # array to get the area the pacman has already moved in
+
+    #get the starting point
+    startingPoint = problem.getStartState()
+    myUCS.push((startingPoint, [], 0),
+               dictionary[str(startingPoint[0])])  # push into the queue together with the dictionary of keys
+
+    while not myUCS.isEmpty():  # while queue is not empty
+        successor, goal, cost = myUCS.pop()
+        goalState = problem.isGoalState(successor)
+
+        if successor not in pathWalked:
+            pathWalked.append(successor)
+            otherSuccessorPoints = problem.getSuccessors(successor)
+            for x, y, z in otherSuccessorPoints:
+                # also add the successor points to the dictionary
+                dictionary[str(x)] = problem.getCostOfActions(goal + [y])
+
+                # so now get successors of the current successor point, and add it to the queue together with the dictionary
+                myUCS.push((x, goal + [y], z), dictionary[str(x)])
+
+        if goalState:
+            return goal
+
     util.raiseNotDefined()
 
 def nullHeuristic(state, problem=None):
