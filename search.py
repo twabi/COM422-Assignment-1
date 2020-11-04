@@ -87,6 +87,42 @@ def depthFirstSearch(problem):
     print("Start's successors:", problem.getSuccessors(problem.getStartState()))
     """
     "*** YOUR CODE HERE ***"
+    print("Start:", problem.getStartState())
+    print("Is the start a goal?", problem.isGoalState(problem.getStartState()))
+    print("Start's successors:", problem.getSuccessors(problem.getStartState()))
+
+    # Depth first search always uses a stack data structure coz its last-in first-out
+    mySearchStack = util.Stack()
+    # array to get the area the pacman has already moved in
+    pathWalked = []
+    # getting the starting point
+    startingPoint = problem.getStartState()
+    mySearchStack.push((startingPoint, [], 0))  # initial value in the stack with the starting point
+
+    # a loop to traverse the stack as long as its not empty
+    while not mySearchStack.isEmpty():
+
+        # get the current successor point while popping it from the stack
+        successor, goal, cost = mySearchStack.pop()
+        goalState = problem.isGoalState(successor)
+
+        if successor not in pathWalked:
+            # if the successor point has not been looked at then add it to the path already walked upon
+            pathWalked.append(successor)
+
+            # get the point's successors
+            otherSuccessorPoints = problem.getSuccessors(successor)
+            print(otherSuccessorPoints)
+            #iterate the points successors
+            for x, y, z in otherSuccessorPoints:
+                # so now  add it to the stack
+                mySearchStack.push((x, goal + [y], z))
+
+        if goalState:
+            # if the successor point is the goal, return
+            return goal
+
+    # what ever this was, it was already in the code
     util.raiseNotDefined()
 
 def breadthFirstSearch(problem):
